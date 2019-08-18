@@ -1,17 +1,27 @@
 build/**
 components/**
-dist/**
-libtextsecure/**
 coverage/**
+dist/**
 
-# these aren't ready yet, pulling files in one-by-one
-js/**
-test/**
-/*.js
-!main.js
-!prepare_build.js
+# Generated files
+js/curve/*
+js/components.js
+js/libtextsecure.js
+js/util_worker.js
+js/libsignal-protocol-worker.js
+libtextsecure/components.js
+libtextsecure/test/test.js
+test/test.js
 
-# all of these files will be new
-!test/server/**/*.js
+# Third-party files
+js/Mp3LameEncoder.min.js
+js/WebAudioRecorderMp3.js
+js/libphonenumber-util.js
+js/libsignal-protocol-worker.js
+libtextsecure/libsignal-protocol.js
+libtextsecure/test/blanket_mocha.js
+test/blanket_mocha.js
 
-# all of app/ is included
+# TypeScript generated files
+ts/**/*.js
+
